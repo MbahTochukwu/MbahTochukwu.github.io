@@ -4,7 +4,7 @@ My Portfolio Website
 <ul>
   <li>
     <strong>Kingsmen Pastries<strong/> <br>
-      <a href="https://github.com/MbahTochukwu/MbahTochukwu.github.io.git">Live Demo</a> |
+      <a href="Kingsmen-pastries">Live Demo</a> |
       <a href="https://github.com/MbahTochukwu/MbahTochukwu.github.io.git">Source Code</a>
   </li>
 </ul>
