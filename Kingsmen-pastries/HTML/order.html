@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Now - Kingsmen Pastries</title>
+  <link rel="stylesheet" href="../CSS/order.css">
+</head>
+<body>
+
+  <h1>Order Your Favorite Pastries</h1>
+
+  <form id="order-form">
+    <div class="user-name-section">
+      <label for="userName">Name:</label>
+      <input type="text" id="userName" name="userName" placeholder="Enter your name" required>
+    </div>
+    
+    <div class="order-section">
+      <label>Item:</label>
+      <select name="item[]" required>
+        <option value="" disabled selected>Select item</option>
+        <option value="Puff Puff" data-price="100">Puff Puff - ₦100</option>
+        <option value="Buns" data-price="120">Buns - ₦120</option>
+        <option value="Egg Roll" data-price="150">Egg Roll - ₦150</option>
+        <option value="Shawarma" data-price="800">Shawarma - ₦800</option>
+        <option value="Small Chops" data-price="1000">Small Chops - ₦1000</option>
+        <!-- Add more as needed -->
+      </select>
+
+      <label>Quantity:</label>
+      <input type="number" name="quantity[]" min="1" value="1" required>
+
+      <button type="button" class="remove-section">Remove</button>
+    </div>
+
+    <div id="order-sections"></div>
+
+    <button type="button" id="add-section">Add Another Item</button>
+
+    <h3>Total: ₦<span id="total-price">0</span></h3>
+
+<button type="submit" id="proceed-btn"><a href="../HTML/checkout.html"></a>Proceed to Pay</button>
+  </form>
+
+</body>
+</html>
